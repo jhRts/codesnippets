@@ -1,0 +1,37 @@
+h1,p,span{
+    -webkit-animation: wp .5s forwards ease; /* Chrome, Safari, Opera */
+    animation: wp .5s forwards ease;
+    position:relative;
+    left:50px;
+    opacity:0;
+}
+
+h1{
+  animation-delay:.1s;
+  -webkit-animation-delay:.1s; /* Safari and Chrome */
+}
+p{
+  animation-delay:.2s;
+  -webkit-animation-delay:.2s; /* Safari and Chrome */
+}
+span{
+  animation-delay:.25s;
+  -webkit-animation-delay:.25s; /* Safari and Chrome */
+}
+
+@-webkit-keyframes wp {
+    to {
+      left:0;
+      opacity:1;
+    }
+}
+
+@keyframes wp {
+    to {
+      left:0;
+      opacity:1;
+    }
+}
+
+
+/* ease -> http://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp */
